@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fdf3e7;
+    color: #9c6d42;
+}
+
+/* Container chính */
+.invitation-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Canh giữa */
+    align-items: center;
+    background-color: #fff; /* Màu nền trắng */
+    padding: 20px; /* Khoảng cách */
+    border: 5px solid #f2e6d9; /* Viền nhẹ nhàng */
+    border-radius: 10px; /* Bo góc */
+    margin: 0 auto 20px auto; /* Căn giữa container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Chiều rộng khung ảnh */
+    height: 300px; /* Chiều cao khung ảnh */
+}
+
+.graduation-image {
+    width: auto;
+    height: 100%; /* Chiều cao vừa đủ container */
+    object-fit: cover; /* Vừa khít không méo */
+    border-radius: 8px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Icon mũ tốt nghiệp */
+.graduation-icon {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    animation: bounce 2s infinite alternate;
+}
+
+/* Keyframes hiệu ứng */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* Nội dung */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #8c5b39;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    font-family: 'Lobster', cursive;
+    font-size: 2.2em;
+    color: #e38e44;
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #704621;
+}
+
+.tên {
+    font-size: 1.5em; /* Cỡ chữ lớn nổi bật */
+    color: #e38e44; /* Màu cam nổi bật */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ */
+    letter-spacing: 2px; /* Khoảng cách giữa các chữ */
+    animation: fadeIn 1.5s ease-in-out; /* Hiệu ứng fade-in */
+}
+
+/* Class cho friends */
+.friends {
+    font-family: 'Roboto', sans-serif; /* Font chữ hiện đại */
+    font-weight: bold; /* In đậm */
+    color: #9c6d42; /* Màu nâu hài hòa */
+    background-color: #fdf3e7; /* Màu nền nhạt */
+    padding: 5px 10px; /* Khoảng cách padding */
+    border-radius: 8px; /* Bo tròn nhẹ */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    display: inline-block; /* Hiển thị inline nhưng có thể padding */
+}
+
+/* Thẻ p */
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em; /* Tăng nhẹ cỡ chữ */
+    color: #5e4c3a; /* Màu chữ nâu trầm */
+    line-height: 1.6; /* Giãn dòng thoải mái */
+    margin: 10px 0; /* Khoảng cách trên dưới */
+    text-align: center; /* Căn giữa */
+    animation: fadeInUp 1s ease-in-out; /* Hiệu ứng hiện từ dưới lên */
+}
+
+/* Thông tin buổi lễ */
+.info-section {
+    background-color: #fef7eb;
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 3s ease-in-out;
+}
+
+.info-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e38e44;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.info-section p {
+    text-align: center;
+    font-size: 1em;
+    margin: 5px 0;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Footer hiệu ứng chạy chữ */
+.footer {
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.scroll-animation {
+    overflow: hidden;
+    height: 40px;
+}
+
+.scroll-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #d97323;
+    animation: scrollText 10s linear infinite;
+}
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
